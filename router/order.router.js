@@ -3,8 +3,8 @@ const orderRoute = express.Router();
 
 const Order = require('../model/order.model');
 
-proRoute.route('/').get(function(req, res) {
-  Pro.find(function(err, data) {
+orderRoute.route('/').get(function(req, res) {
+  Order.find(function(err, data) {
     if (err) {
       console.log(err);
     } else {
