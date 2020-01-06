@@ -24,8 +24,8 @@ mongoose.connect(config.DB, { useNewUrlParser: true }).then(
 );
 app.use(cors());
 
-const proRoute = require('./router/product.router');
-app.use('/product/api/', proRoute);
+const ecomRoute = require('./router/router.controller');
+app.use('/product/api/', ecomRoute);
 
 app.listen(PORT, function() {
   console.log(`Server is running on url http://localhost:${PORT}`);
