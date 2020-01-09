@@ -12,6 +12,7 @@ let Order = new Schema(
     address: { type: String },
     mobile: { type: String },
     orderinfo: { type: Array },
+    total: {type: Number },
     orderstatus: { type: String },
     orderdate: { type: String }
   },
